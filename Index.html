@@ -6,58 +6,105 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portifólio</title>
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
+    <header>
+            <h2 href="#" class="cabecalho__titulo animate__animated animate__fadeInDown">Portifólio</h2>        
+    </header>
+
     <body>
-
-        <header class="cabecalho"> 
-            <nav class="cabecalho__menu">
-                <a class="cabecalho__menu__link" href="./Index.html">Home</a>
-                <a class="cabecalho__menu__link" href="./about.html">Sobre mim</a>
-                <a class="cabecalho__menu__link" href="./curriculo.html">Currículo</a>
-            </nav>
-        </header>
-
-        <main class="apresentacao">
-
-            <section class="apresentacao__conteudo">
-                <h1 class="apresentacao__conteudo__titulo">
-                    Me chamo Bruno Oliveira e estou aprendendo <strong class="destaque-titulo"> um Front-end de qualidade!</strong>
-                </h1>
-
-                <p class="apresentacao__conteudo__texto">
-                    Olá! Sou Bruno Eduardo, começando no  Front-end, HTML e CSS. Procuro me especializar nos mesmos e conto com toda a ajuda que puder ter. Vamos conversar?
-                </p>
-                
-                <div class="apresentacao__links">
-                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                    <a 
-                        class="apresentacao__links__navegacao" href="https://www.instagram.com/eduardoo_bruno"           target="_blank">
-                        <img src="./assets/instagram.png" width="26px" length="30px">
-                        Instragran
-                    </a>
-                    <a 
-                        class="apresentacao__links__navegacao" href="https://github.com/BrunoEduardo10203" target="_blank">
-                        <img src="./assets/github.png" width="26px" length="30px">
-                        Github
-                    </a>
-                    <a 
-                        class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/bruno-eduardo-659622275/" target="_blank">
-                        <img src="./assets/linkedin.png" width="26px" length="30px">
-                        Linkedin                    
-                    </a>
+        <main >
+            
+            <section class="apresentacao">
+                <div class="apresentacao__container animate__animated animate__fadeIn">
+                    <h1 class="apresentacao__titulo">Frontend Developer.</h1>
+                    <h2 class="apresentacao__subtitulo">Gosto de criar produtos front e back-end sólidos e escaláveis ​​com ótimas experiências de usuário.</h2>
                 </div>
-
+                <img class="apresentacao__imagem animate__animated animate__fadeIn" src="./assets/eu_quadrado.jpg" alt="Foto Bruno Eduardo" width="350px">
             </section>
 
-            <img class="apresentacao__imagem" src="./assets/imagem.jpeg" alt="Foto Bruno Eduardo" width="350px">
-            
-        </main>
-        <footer class="rodape">
-             Desenvolvido por Bruno
+            <section class="descricao">
+                <div class="descricao__um">
+                    <h2 class="descricao__um_titulo">Projeto</h2>
+                    <p class="descricao__um_paragrafo">Sou apaixonado por tecnologia, atualmente cursando engenharia de software. Minha paixão pela área me impulsiona a estudar constantemente, buscando aprimorar minhas habilidades e acompanhar as novidades do setor. Sou extremamente dedicado e estou sempre em busca de novos desafios, pois acredito que a aprendizagem contínua é essencial para o crescimento profissional. Tenho um forte desejo de explorar diferentes áreas da tecnologia e contribuir de forma significativa para o avanço do setor.</p>
+                </div>
+                <div class="descricao__dois">
+                    <h2 class="descricao__dois_titulo">Engenharia</h2>
+                    <p class="descricao__dois_paragrafo">Ao criar aplicativos JavaScript, estou equipado com as ferramentas certas e posso funcionar de forma totalmente independente delas para fornecer soluções rápidas e resilientes, otimizadas para escalabilidade — desempenho e escalabilidade são prioridades no meu radar.</p>
+                </div>
+            </section>
 
+            <section class="biografia">
+                <div class="biografia__texto">
+                    <h2 class="bigrafia__titulo">Algumas tecnologias que uso</h2>
+                    <p>HTML:<br>Desde o início, sempre foquei bastante na base, e um bom HTML é fundamental para desenvolver um código de qualidade.</p>
+                    <br>
+                    <p>CSS:<br>Apesar de não ser um especialista, tenho um bom entendimento das classes e, quando necessário, recorro a boas pesquisas :)</p>
+                    <br>
+                    <p>JavaScript:<br>Com muitos cursos e alguns projetos pessoais, tenho bastante familiaridade com automações e com a linguagem em geral.</p>
+                    <br>
+                    <p>Node.js:<br>Desenvolvo aplicações com servidores locais e possuo uma boa noção de back-end.</p>
+                    <br>
+                    <p>C#:<br>Como é uma linguagem muito versátil, decidi estudá-la por ser tão completa. Com as disciplinas da faculdade e meu estudo pessoal, estou gostando muito do aprendizado.</p>
+                </div>
+                <img class="biografia__imagen" src="assets/cartoon_programdor.jpg" alt="Homem em um computador">
+            </section>
+
+            <section class="contato">
+                <h2 class="contato__titulo">Me mande uma mensagem!</h2>
+                <h3 class="contato__subtitulo">Tem uma pergunta ou proposta ou apenas quer dizer olá? Vá em frente.</h3>
+
+                <form class="formulario" action="" method="post">
+                    <div class="formulario__container">
+                        <div class="container__nome">
+                            <legend>Seu nome</legend>
+                            <input class="formulario__nome" type="text" minlength="3" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="container__email">
+                            <legend>Endereço de E-mail</legend>
+                            <input class="formulario__email" type="email" minlength="4" placeholder="Endereço de E-mail" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="container__mensagem">
+                        <legend class="container__mensagem-item">Sua mensagem</legend>
+                        <input class="formulario__texto" type="text" placeholder="Olá, acho que precisamos de um sistema de design para nossos produtos na Empresa X. Quando você poderá discutir isso?" required>
+                    </div>
+                    <br>
+                    <a href="#" class="formulario__enviar">Enviar :)</a>
+                </form>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <section class="rodape__contato">
+                <div class="rodape__contato-container">
+                    <h3 class="rodape__titulo">Diga olá!</h3>
+                    <p class="rodape__telegram">Meu Email:</p>
+                    <a href="mailto:b.eduardobruno@gmail.com" class="rodape__email">b.eduardobruno@gmail.com</a>
+                </div>
+                <!-- <div class="rodape__trabalhos">
+                    <p class="rodape__trabalhos-item">Meu Trabalho</p>
+                    <p class="rodape__trabalhos-item">Minha estante</p>
+                    <p class="rodape__trabalhos-item">Meu resumo</p>
+                </div> -->
+            </section>
+            <hr>
+            <section class="rodape__redes">
+                <div class="rodape__copyrigth">
+                    <p>© Bruno Eduardo 2024</p>
+                </div>
+
+                <div class="rodape__social">
+                    <a href="https://github.com/BrunoEduardo10203" target="_blank" class="rodape__social-item">Git Hub</a>
+                    <a href="https://www.linkedin.com/in/bruno-eduardo-659622275/" target="_blank" class="rodape__social-item">Linkedin</a>
+                    <a href="https://www.instagram.com/eduardoo_bruno" target="_blank" class="rodape__social-item">Instagran</a>
+                </div>
+               
+            </section>
         </footer>
         
     </body>
-
+    <script src="js/main.js"></script>
 </html>
